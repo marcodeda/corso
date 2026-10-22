@@ -27,3 +27,12 @@ def elimina_task(tasks: list[Task], task_id: int) -> bool:
             del tasks[indice]
             return True
     return False
+
+# Task per ID 1
+def elimina_task1(tasks: list[Task], task_id: int) -> bool:
+    """Elimina un task per ID; False se non esiste."""
+    for indice, task in enumerate(tasks):
+        if task.id == task_id:
+            del tasks[indice]
+            return True
+    return False    
